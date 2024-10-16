@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* Custom scrollbar styles */
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+  
+    ::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background-color: #f56565; /* Tailwind's red-500 */
+      border-radius: 10px;
+    }
+  
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #c53030; /* Tailwind's red-600 for hover */
+    }
+  }
+
+  @font-face {
+    font-family: 'Slick';
+    src: url('./path/to/slick.woff2') format('woff2'),
+         url('./path/to/slick.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
